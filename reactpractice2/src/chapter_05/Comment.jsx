@@ -35,8 +35,17 @@ const styles={
 }
 function Comment(props){
     return (
-        <div>
-            <h1>this is my brand new website!</h1>
+        <div style={styles.wrapper}>
+            <div style={styles.imageContainer}>
+                <img 
+                style={styles.image} 
+                src="https://www.w3schools.com/howto/img_avatar.png" alt="profile"
+                />
+            </div>
+            <div style={styles.contentContainer}>
+                <span style={styles.nameText}>{props.name}</span>
+                <span style={styles.commentText}>{props.comment}</span>
+            </div>
         </div>
     );
 }
